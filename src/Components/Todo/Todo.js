@@ -18,7 +18,7 @@ function Todo({el}){
         dispatch(delTodo(el.id))
     }
 
-    const edit = () => {
+    const edit = () => {taskModifier &&
         dispatch(editTodo({id:el.id ,task:taskModifier}));
         setTaskModifier('');
         edito()

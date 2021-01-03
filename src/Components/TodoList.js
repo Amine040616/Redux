@@ -2,7 +2,7 @@ import React from 'react';
 import Todo from './Todo/Todo';
 import {useSelector} from 'react-redux';
 
-function TodoList({allComplet, modifTask, completTache, deleteTache}){
+function TodoList({allComplet}){
     const taches=useSelector((state)=>state.taches)
     return (
         <div>

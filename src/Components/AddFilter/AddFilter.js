@@ -12,7 +12,7 @@ function AddFilter({ setAllComplet }){
 
     const dispatch = useDispatch();
 
-    const nvllTache = () => {
+    const nvllTache = () => {nvelTache &&
         dispatch(addTodo({id:Math.random(), task:nvelTache, isComplete:false}));
         setNvelTache('');
     }
