@@ -1,0 +1,77 @@
+.xDelete{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    border-radius: 20px;
+    padding: 4px 0;
+    width: 30px;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.39) 0px 5px 5px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 90%;
+}
+.xDelete:hover{
+    background-color: white;
+    color:red;
+    border: 1px solid red;
+}
+.ettask{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 55px;
+}
+.editComplete{
+    height: 38px;
+    border-radius: 20px;
+    padding: 0 25px;
+    margin:10px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.editComplete button{
+    height: 38px;
+    border-radius: 20px;
+    padding: 0 25px;
+    margin:10px;
+    
+}
+
+.editComplete input{
+    width: 100%;
+    height: 40%;
+    border: 2px solid rgb(108, 205, 250);
+    color: rgb(0, 0, 0);
+    padding: 8px 0 8px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    margin:10px
+}
+
+
+.styleTsk{
+    height: 100px;
+    width: 500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.39) 0px 5px 5px;
+    color: black;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.styleTskDone{
+    height: 100px;
+    width: 500px;
+    background-color: rgb(71, 88, 82);
+    box-shadow: rgba(0, 0, 0, 0.39) 0px 5px 5px;
+    color: rgb(109, 151, 128);
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
