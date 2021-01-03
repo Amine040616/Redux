@@ -1,17 +1,20 @@
 import React, {useState} from 'react';
+import {useDispatch} from 'react-redux';
+import { addTodo } from '../../redux/actions/tdlstActions';
 import logo from '../../logoto.png';
 import './AddFilter.css'
 
 
 
-function AddFilter({addTache, setAllComplet}){
+function AddFilter({ setAllComplet }){
 
     const [nvelTache, setNvelTache] = useState('');
 
-    function nvllTache(){
+    const dispatch = useDispatch();
 
-        addTache(nvelTache)
-        setNvelTache('')
+    const nvllTache = () => {
+        dispatch(addTodo({id:Math.random(), task:nvelTache, isComplete:false}));
+        setNvelTache('');
     }
 
     return (
